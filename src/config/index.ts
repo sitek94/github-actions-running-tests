@@ -11,5 +11,6 @@ export const getEnv = (name: string): string => {
   return value;
 };
 
+export const PROD = getEnv('REACT_APP_PROD_SECRET');
 export const TEST = getEnv('REACT_APP_TEST_SECRET');
 
