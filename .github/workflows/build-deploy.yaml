@@ -33,6 +33,7 @@ jobs:
         run: npm run build
         env:
           REACT_APP_PROD_SECRET: ${{ secrets.REACT_APP_PROD_SECRET }}
+          REACT_APP_TEST_SECRET: ${{ secrets.REACT_APP_TEST_SECRET }}
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
